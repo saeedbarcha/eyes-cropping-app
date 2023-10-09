@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eye's Cropping App</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="mainCont">
+       
+      <div class="innerCont">
+        <h1>Croping App</h1>
+        <input type="file" id="imageInput" />
+        <button onclick="uploadImage()">Upload</button>
+        <img
+          id="uploadedImage"
+          src=""
+          alt="Uploaded Image"
+          style="display: none"
+        />
+        <button id="cropButton" onclick="cropEyes()" style="display: none">
+          Crop Eyes
+        </button>
+        <a
+          id="downloadLink"
+          href=""
+          download="cropped_image.jpg"
+          style="display: none"
+          >Download Cropped Image</a
+        >
+        <script src="./js/script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
